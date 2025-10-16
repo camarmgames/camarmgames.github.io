@@ -100,7 +100,7 @@ body {
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color:  rgb(192, 0, 240);
 }
 
 hr {
@@ -121,7 +121,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
-  Color: #f6eedb !important;
+  Color:#ff1cbb!important;
   
 }
 @media (min-width: 1200px) {
@@ -132,7 +132,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
-  Color: #f6eedb !important;
+  Color: #df2faa !important;
 }
 @media (min-width: 1200px) {
   h2, .h2 {
@@ -142,7 +142,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
-  Color: #f6eedb !important;
+  Color: #ffade4 !important;
 }
 @media (min-width: 1200px) {
   h3, .h3 {
@@ -152,7 +152,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
-  Color: #ffffff !important;
+  Color:#ff79d2 !important;
 }
 @media (min-width: 1200px) {
   h4, .h4 {
@@ -171,7 +171,7 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  background-color: rgba(248, 165, 255, 0.9); /* recuadro oscuro semi-transparente */
+  background-color: rgb(209, 150, 236); /* recuadro oscuro semi-transparente */
   padding: 10px 10px;                   /* espacio alrededor del texto */
   border-radius: 8px;                    /* esquinas redondeadas */
   display: inline-block;                 /* que solo abarque el texto */
@@ -325,7 +325,7 @@ table {
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: #6c757d;
+  color:  rgb(249, 183, 255);
   text-align: left;
 }
 
@@ -599,7 +599,7 @@ progress {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
-  color: #6c757d;
+  color: #4183bd;
 }
 .blockquote-footer::before {
   content: "— ";
@@ -610,7 +610,15 @@ progress {
   max-width: 500px;
   height: auto;
 }
-
+.img-icon{
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  border: 0.5rem solid #ffade4;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -1752,11 +1760,11 @@ progress {
   --bs-table-border-color: var(--bs-border-color);
   --bs-table-accent-bg: transparent;
   --bs-table-striped-color: var(--bs-body-color);
-  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --bs-table-striped-bg:  rgb(249, 183, 255);
   --bs-table-active-color: var(--bs-body-color);
-  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-active-bg:  rgb(249, 183, 255);
   --bs-table-hover-color: var(--bs-body-color);
-  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  --bs-table-hover-bg:  rgb(249, 183, 255);
   width: 100%;
   margin-bottom: 1rem;
   color: var(--bs-table-color);
@@ -2781,13 +2789,13 @@ textarea.form-control-lg {
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
-  --bs-btn-color: #212529;
+  --bs-btn-color: #245e97;
   --bs-btn-bg: transparent;
   --bs-btn-border-width: 1px;
   --bs-btn-border-color: transparent;
   --bs-btn-border-radius: 0.375rem;
   --bs-btn-hover-border-color: transparent;
-  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  --bs-btn-box-shadow: inset 0 1px 0 rgba(25, 134, 236, 0.15), 0 1px 1px rgba(25, 134, 236, 0.15);
   --bs-btn-disabled-opacity: 0.65;
   --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
   display: inline-block;
@@ -2854,19 +2862,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #ffc800;
-  --bs-btn-border-color: #ffc800;
+  --bs-btn-bg: rgb(209, 150, 236);
+  --bs-btn-border-color:rgb(209, 150, 236);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #d9aa00;
-  --bs-btn-hover-border-color: #cca000;
+  --bs-btn-hover-bg: rgb(167, 113, 192);
+  --bs-btn-hover-border-color:rgb(209, 150, 236);
   --bs-btn-focus-shadow-rgb: 255, 208, 38;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #cca000;
-  --bs-btn-active-border-color: #bf9600;
+  --bs-btn-active-bg:rgb(167, 113, 192);
+  --bs-btn-active-border-color: rgb(167, 113, 192);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #ffc800;
-  --bs-btn-disabled-border-color: #ffc800;
+  --bs-btn-disabled-bg: rgb(209, 150, 236);
+  --bs-btn-disabled-border-color: rgb(209, 150, 236);
 }
 
 .btn-secondary {
@@ -2973,16 +2981,16 @@ textarea.form-control-lg {
 
 .btn-dark {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #212529;
-  --bs-btn-border-color: #212529;
+  --bs-btn-bg: #ffade4;
+  --bs-btn-border-color: #d445a9;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #424649;
-  --bs-btn-hover-border-color: #373b3e;
+  --bs-btn-hover-bg: #ce71ba;
+  --bs-btn-hover-border-color: #d445a9;
   --bs-btn-focus-shadow-rgb: 66, 70, 73;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #4d5154;
   --bs-btn-active-border-color: #373b3e;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(255, 1, 221, 0.125);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #212529;
   --bs-btn-disabled-border-color: #212529;
@@ -3619,12 +3627,13 @@ textarea.form-control-lg {
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
-  --bs-nav-link-disabled-color: #6c757d;
+  --bs-nav-link-disabled-color: white;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  background-color: white;
 }
 
 .nav-link {
@@ -3657,7 +3666,7 @@ textarea.form-control-lg {
   --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
   --bs-nav-tabs-link-active-color: #495057;
   --bs-nav-tabs-link-active-bg: #fff;
-  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
+  --bs-nav-tabs-link-active-border-color::#ff79d2;
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
 }
 .nav-tabs .nav-link {
@@ -4340,7 +4349,7 @@ textarea.form-control-lg {
 }
 
 .accordion {
-  --bs-accordion-color: #212529;
+  --bs-accordion-color:  rgb(249, 183, 255);
   --bs-accordion-bg: #fff;
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
@@ -4349,7 +4358,7 @@ textarea.form-control-lg {
   --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
   --bs-accordion-btn-padding-x: 1.25rem;
   --bs-accordion-btn-padding-y: 1rem;
-  --bs-accordion-btn-color: #212529;
+  --bs-accordion-btn-color:  rgb(249, 183, 255);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --bs-accordion-btn-icon-width: 1.25rem;
@@ -6704,59 +6713,59 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: #ffc800 !important;
+  color: #d445a9 !important;
 }
 .link-primary:hover, .link-primary:focus {
-  color: #cca000 !important;
+  color: #f9fafb !important;
 }
 
 .link-secondary {
-  color: #6c757d !important;
+  color: #d445a9 !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #565e64 !important;
+  color:#f9fafb !important;
 }
 
 .link-success {
-  color: #198754 !important;
+  color: #d445a9 !important;
 }
 .link-success:hover, .link-success:focus {
-  color: #146c43 !important;
+  color: #f9fafb !important;
 }
 
 .link-info {
-  color: #0dcaf0 !important;
+  color: #d445a9 !important;
 }
 .link-info:hover, .link-info:focus {
-  color: #0aa2c0 !important;
+  color:#f9fafb !important;
 }
 
 .link-warning {
-  color: #ffc800 !important;
+  color:#d445a9 !important;
 }
 .link-warning:hover, .link-warning:focus {
-  color: #cca000 !important;
+  color: #f9fafb !important;
 }
 
 .link-danger {
-  color: #dc3545 !important;
+  color:#d445a9 !important;
 }
 .link-danger:hover, .link-danger:focus {
-  color: #b02a37 !important;
+  color: #f9fafb !important;
 }
 
 .link-light {
-  color: #f8f9fa !important;
+  color: #d445a9 !important;
 }
 .link-light:hover, .link-light:focus {
   color: #f9fafb !important;
 }
 
 .link-dark {
-  color: #212529 !important;
+  color:  #d445a9 !important;
 }
 .link-dark:hover, .link-dark:focus {
-  color: #1a1e21 !important;
+  color: #ce71ba !important;
 }
 
 .ratio {
@@ -8164,45 +8173,15 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-chupa {
+body {
   background-image: url('../assets/img/Fondos/FondoChupaChups.png') !important;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.4); /* negro con 50% de opacidad */
-  background-blend-mode: darken; /* combina color y fondo */
-
+  background-size: cover;         /* Ajusta la imagen para cubrir todo */
+  background-position: center;     /* Centra la imagen */
+  background-repeat: no-repeat;    /* Evita que se repita */
+; /* Negro semi-transparente */
+  background-blend-mode: darken;   /* Combina color y fondo */
 }
 
-.bg-mora {
-  background-image: url('../assets/img/Fondos/FondoMora.png') !important;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.4); /* negro con 50% de opacidad */
-  background-blend-mode: darken; /* combina color y fondo */
-
-}
-
-.bg-fresa {
-  background-image: url('../assets/img/Fondos/FondoFresa.png') !important;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.4); /* negro con 50% de opacidad */
-  background-blend-mode: darken; /* combina color y fondo */
-
-}
-
-.bg-regaliz {
-  background-image: url('../assets/img/Fondos/FondoRegaliz.png') !important;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.4); /* negro con 50% de opacidad */
-  background-blend-mode: darken; /* combina color y fondo */
-
-}
 
 .bg-dark {
   --bs-bg-opacity: 1;
@@ -10922,7 +10901,7 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: rgb(249, 183, 255);
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10932,23 +10911,22 @@ p {
   font-weight: 700;
 }
 #mainNav .navbar-brand {
-  color: #ffc800;
+  color: rgb(249, 183, 255);
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   letter-spacing: 0.0625em;
   text-transform: uppercase;
 }
-#mainNav .navbar-brand img {
-  height: 1.5rem;
-}
+
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: bolder;
   font-size: 0.95rem;
-  color: #fff;
+  color: #df2faa;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color:  #ff1cbb;
 }
 
 @media (min-width: 992px) {
@@ -10956,7 +10934,7 @@ p {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
-    background-color: transparent;
+    background-color: rgb(249, 183, 255);
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -10970,7 +10948,7 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: rgb(249, 183, 255);
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -10990,8 +10968,8 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
-  color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  color:  rgb(192, 0, 240);
+  background-image: url("../assets/img/Fondos/castillo.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11169,9 +11147,9 @@ header.masthead .masthead-heading {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid  #ffade4;
   border-radius: 100%;
-  background-color: #ffc800;
+  background-color: white;
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
@@ -11229,7 +11207,18 @@ header.masthead .masthead-heading {
     width: 100px;
     height: 100px;
     margin-left: -50px;
+
+     display: flex;
+  align-items: center;   /* centra verticalmente */
+  justify-content: center; /* centra horizontalmente */
+  
+     
   }
+  .timeline > li .timeline-image img {
+  width: 70%;       /* la imagen será más pequeña que el círculo */
+  height: auto;     /* mantiene proporciones */
+  display: block;   /* elimina espacios extra */
+}
   .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
     font-size: 13px;
     line-height: 18px;
@@ -11288,11 +11277,14 @@ header.masthead .masthead-heading {
 .team-member img {
   width: 14rem;
   height: 14rem;
-  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  border: 0.5rem solid  #ffade4;
 }
 .team-member h4, .team-member .h4 {
   margin-top: 1.5rem;
   margin-bottom: 0;
+}
+.team-member p.text-muted {
+  display: block; /* Asegura que el texto ocupe su propia línea */
 }
 
 .img-brand {
@@ -11355,6 +11347,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .footer {
+  background-color: rgb(255, 148, 232);
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
