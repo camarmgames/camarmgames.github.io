@@ -10989,16 +10989,18 @@ p {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  position: relative;
+  padding-top: 17rem;
+  padding-bottom: 12.5rem;
   text-align: center;
-  color:  rgb(192, 0, 240);
+  color: rgb(192, 0, 240);
   background-image: url("../assets/img/Fondos/castillo.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
 }
+
 
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -11013,15 +11015,16 @@ header.masthead .masthead-subheading {
 }
 
 header.masthead .masthead-heading {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 800;
-  line-height: 4rem;
+  line-height: 4.5rem;
   margin-bottom: 2rem;
-  color: rgb(180, 0, 240);
+  color: rgb(170, 0, 255);
   text-shadow:
-    0 0 5px rgba(255, 255, 255, 0.8),
-    2px 2px 8px rgba(0, 0, 0, 0.9);
+    0 0 6px rgba(255, 255, 255, 0.9),
+    3px 3px 6px rgba(0, 0, 0, 0.8);
 }
+
 
 @media (min-width: 768px) {
   header.masthead .masthead-heading {
