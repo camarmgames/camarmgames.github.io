@@ -11000,8 +11000,8 @@ header.masthead .masthead-subheading {
   line-height: 1.5rem;
   margin-bottom: 25px;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  opacity: 0.9; /* 🔹 un poco más suave */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.45); /* 🔹 resalta sobre el fondo claro */
+  opacity: 1; /* 🔹 sin opacidad */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* 🔹 sombra fuerte para resaltar */
 }
 
 header.masthead .masthead-heading {
@@ -11010,8 +11010,8 @@ header.masthead .masthead-heading {
   line-height: 3.25rem;
   margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  opacity: 0.92; /* 🔹 un poco más fuerte */
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* 🔹 más marcado para el título */
+  opacity: 1; 
+  text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.9);
 }
 
 @media (min-width: 768px) {
@@ -11025,8 +11025,8 @@ header.masthead .masthead-heading {
     font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
-    opacity: 0.9;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.45);
+    opacity: 1;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
   }
 
   header.masthead .masthead-heading {
@@ -11034,10 +11034,11 @@ header.masthead .masthead-heading {
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
-    opacity: 0.92;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.9);
   }
 }
+
 
 
 }
