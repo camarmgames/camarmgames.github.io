@@ -2881,20 +2881,25 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: rgb(209, 150, 236);
-  --bs-btn-border-color:rgb(209, 150, 236);
+  --bs-btn-bg: rgba(209, 150, 236, 0.9);
+  --bs-btn-border-color: rgba(209, 150, 236, 0.9);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgb(167, 113, 192);
-  --bs-btn-hover-border-color:rgb(209, 150, 236);
-  --bs-btn-focus-shadow-rgb: 255, 208, 38;
+  --bs-btn-hover-bg: rgba(167, 113, 192, 1);
+  --bs-btn-hover-border-color: rgba(167, 113, 192, 1);
+  --bs-btn-focus-shadow-rgb: 167, 113, 192;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg:rgb(167, 113, 192);
-  --bs-btn-active-border-color: rgb(167, 113, 192);
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: rgb(209, 150, 236);
-  --bs-btn-disabled-border-color: rgb(209, 150, 236);
+  --bs-btn-active-bg: rgba(167, 113, 192, 1);
+  --bs-btn-active-border-color: rgba(167, 113, 192, 1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  border: none;
+  transition: all 0.3s ease;
 }
+
+.btn-primary:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
 
 .btn-secondary {
   --bs-btn-color: #fff;
@@ -11008,23 +11013,29 @@ header.masthead .masthead-subheading {
 }
 
 header.masthead .masthead-heading {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 800;
-  line-height: 3.25rem;
+  line-height: 4rem;
   margin-bottom: 2rem;
-  color: rgb(192, 0, 240); 
+  color: rgb(180, 0, 240);
   text-shadow:
-    0 0 4px rgba(0, 0, 0, 0.6),
-    2px 2px 6px rgba(0, 0, 0, 0.8); 
-  -webkit-text-stroke: 0.5px white; 
-  text-stroke: 0.5px white;
+    0 0 5px rgba(255, 255, 255, 0.8),
+    2px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
 @media (min-width: 768px) {
-  header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
+  header.masthead .masthead-heading {
+    font-size: 4.8rem;
+    font-weight: 800;
+    line-height: 4.8rem;
+    margin-bottom: 4rem;
+    color: rgb(180, 0, 240);
+    text-shadow:
+      0 0 5px rgba(255, 255, 255, 0.8),
+      2px 2px 8px rgba(0, 0, 0, 0.9);
   }
+}
+
 
   header.masthead .masthead-subheading {
     font-size: 2rem;
