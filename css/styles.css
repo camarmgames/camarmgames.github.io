@@ -11398,7 +11398,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .contact-link {
-  color: #fff;
+  color: #8a2be2; /* violeta */
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
@@ -11406,14 +11406,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .contact-link:hover {
-  color: #caa5ff; 
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
   text-decoration: underline;
-}
-
-.contact-link::selection {
-  background-color: rgba(120, 0, 180, 0.6); 
-  color: #fff; 
+  text-shadow: 0 0 6px rgba(138, 43, 226, 0.8); /* brillo violeta */
 }
 
 .copy-message {
