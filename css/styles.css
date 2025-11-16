@@ -11398,13 +11398,14 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .contact-link {
-  color: #7a0ce8; 
-  font-weight: 600;
+  color: #fff; 
+  font-weight: 700; 
   text-decoration: none;
   transition: 0.3s ease;
 }
 
 .contact-link:hover {
-  color: #fff;
-  text-shadow: 0 0 5px #b15eff;
+  text-decoration: underline;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
 }
+
