@@ -381,41 +381,43 @@
         <footer class="footer py-4" id="contact">
   <div class="container">
     <div class="row align-items-center">
-      <!-- Izquierda -->
       <div class="col-lg-4 text-lg-start">
         Copyright &copy; Camarm Games 2025
       </div>
-
-      <!-- Centro -->
       <div class="col-lg-4 my-3 my-lg-0 text-center">
-        <a class="btn btn-dark btn-social mx-2" href="https://x.com/CamarmGames" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/camarmgames/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/@CamarmGames" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a class="btn btn-dark btn-social mx-2" href="https://x.com/CamarmGames" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/camarmgames/" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/@CamarmGames" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
 
-        <div class="text-center mt-3">
-          <p class="text-muted mb-0">
-            Contacto:
-            <div class="text-center mt-3">
-  <p class="text-muted mb-0">
-    Contacto:
-    <span id="copyEmail" class="contact-link" onclick="copyEmailToClipboard()">
-      camarmgames@gmail.com
-    </span>
-  </p>
-  <small id="copyMessage" class="copy-message">📋 Copiado al portapapeles</small>
-</div>
-            </a>
-          </p>
+        <div class="contact-box mt-3 p-2" style="border: 2px solid #caa5ff; border-radius: 8px;">
+          <span style="color: white;">Contacto: </span>
+          <span class="contact-link" id="email-link">camarmgames@gmail.com</span>
+          <span class="copy-message" id="copy-message">📋 Copiado al portapapeles</span>
         </div>
       </div>
-
-      <!-- Derecha -->
       <div class="col-lg-4 text-lg-end">
         <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
         <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
       </div>
     </div>
   </div>
+
+  <script>
+    const emailLink = document.getElementById('email-link');
+    const copyMessage = document.getElementById('copy-message');
+
+    emailLink.addEventListener('click', () => {
+      navigator.clipboard.writeText('camarmgames@gmail.com');
+      copyMessage.style.opacity = '1';
+      setTimeout(() => copyMessage.style.opacity = '0', 1500);
+    });
+  </script>
 </footer>
 
 
