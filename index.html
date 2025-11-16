@@ -395,11 +395,15 @@
         <div class="text-center mt-3">
           <p class="text-muted mb-0">
             Contacto:
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=camarmgames@gmail.com" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               class="contact-link">
-              camarmgames@gmail.com
+            <div class="text-center mt-3">
+  <p class="text-muted mb-0">
+    Contacto:
+    <span id="copyEmail" class="contact-link" onclick="copyEmailToClipboard()">
+      camarmgames@gmail.com
+    </span>
+  </p>
+  <small id="copyMessage" class="copy-message">📋 Copiado al portapapeles</small>
+</div>
             </a>
           </p>
         </div>
@@ -424,5 +428,22 @@
         <!-- * * Activate your form at https://start.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.start.com/sb-forms-latest.js"></script>
+        <script>
+  function copyEmailToClipboard() {
+    const email = "camarmgames@gmail.com";
+    navigator.clipboard.writeText(email)
+      .then(() => {
+        const msg = document.getElementById("copyMessage");
+        msg.style.opacity = "1";
+        setTimeout(() => {
+          msg.style.opacity = "0";
+        }, 2000);
+      })
+      .catch(err => {
+        console.error("Error al copiar el correo: ", err);
+      });
+  }
+</script>
+
     </body>
 </html>
