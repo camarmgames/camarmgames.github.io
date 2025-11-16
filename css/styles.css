@@ -11398,8 +11398,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .contact-link {
-  color: #fff; 
-  font-weight: 700; 
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
   text-decoration: none;
   transition: 0.3s ease;
 }
@@ -11407,5 +11408,14 @@ section#contact form#contactForm :-ms-input-placeholder {
 .contact-link:hover {
   text-decoration: underline;
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.copy-message {
+  display: block;
+  opacity: 0;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  transition: opacity 0.4s ease;
 }
 
