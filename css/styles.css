@@ -11396,19 +11396,20 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-#colaboradores .portfolio-item img {
+#colaboradores img.img-fluid {
   width: 100%;
   height: auto;
-  border: 6px solid #ffade4;         /* mismo color que los bordes de los círculos */
-  border-radius: 20px;               /* esquinas redondeadas suaves */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); /* sombra sutil */
+  border: 6px solid #ffade4;         /* mismo color que los círculos */
+  border-radius: 20px;               /* esquinas suaves */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#colaboradores .portfolio-item img:hover {
-  transform: scale(1.03);             /* leve aumento al pasar el mouse */
-  box-shadow: 0 0 25px rgba(255, 173, 228, 0.5); /* resplandor rosado */
+#colaboradores img.img-fluid:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(255, 173, 228, 0.5);
 }
+
 
 .contact-link {
   color: #ffffff;
