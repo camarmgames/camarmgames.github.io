@@ -11396,25 +11396,45 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-#colaboradores .portfolio-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  background-color: white;
-  border: 5px solid #f7b2ff; /* borde rosado pastel */
-  box-shadow: 0 0 10px rgba(255, 180, 255, 0.6);
-}
+/* ==== Sección Colaboradores Corregida ==== */
 
 #colaboradores .portfolio-item {
-  border-radius: 50%;
-  overflow: hidden;
-  max-width: 18rem;
+  max-width: 20rem;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
+#colaboradores .portfolio-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* cuadrado perfecto */
+  object-fit: cover;
+  border-radius: 20px; /* bordes suaves */
+  border: 5px solid #f7b2ff; /* borde rosa pastel */
+  background-color: white;
+  box-shadow: 0 0 15px rgba(255, 180, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+#colaboradores .portfolio-item img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px rgba(255, 150, 255, 0.7);
+}
+
+#colaboradores .team-member h4 {
+  color: #d85eff;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+#colaboradores .team-member p {
+  color: #e6dbff;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.3rem;
+  word-wrap: break-word;
+}
 
 .contact-link {
   color: #ffffff;
