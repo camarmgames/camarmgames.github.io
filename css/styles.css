@@ -8200,12 +8200,11 @@ textarea.form-control-lg {
 
 body {
   background-image: url('../assets/img/Fondos/fondo_web.png') !important;
-  background-size: cover;             /* Cubre toda la pantalla sin deformar */
-  background-position: center center; /* Mantiene el foco en el medio */
-  background-repeat: no-repeat;       /* No se repite */
-  background-attachment: fixed;       /* Fondo fijo al hacer scroll */
-  background-color: #2b1e1a;          /* Color base marrón oscuro por si no carga */
-  background-blend-mode: multiply;    /* Oscurece sutilmente sin perder detalle */
+  background-size: cover;           /* Cubre toda la pantalla sin deformarse */
+  background-position: center;      /* Centra la imagen */
+  background-repeat: no-repeat;     /* No se repite */
+  background-attachment: fixed;     /* Permite efecto fijo al hacer scroll */
+  background-color: #000;           /* Color de respaldo si no carga la imagen */
 }
 
 .bg-dark {
@@ -10995,7 +10994,7 @@ header.masthead {
   padding-bottom: 20rem;
   text-align: center;
   color: rgb(192, 0, 240);
-  background-image: url("../assets/img/Fondos/NewCastilloBackground.jpg");
+  background-image: url("../assets/img/Fondos/NewCastilloBackground.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
