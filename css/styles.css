@@ -8199,7 +8199,7 @@ textarea.form-control-lg {
 }
 
 body {
-  background-image: url('../assets/img/Fondos/fondo.png') !important;
+  background-image: url('../assets/img/Fondos/BackgroundWeb.png') !important;
   background-size: 100% auto;         /* Ajusta la imagen para cubrir todo */
   background-position: center;     /* Centra la imagen */
   background-repeat: no-repeat;    /* Evita que se repita */
@@ -10995,7 +10995,7 @@ header.masthead {
   padding-bottom: 20rem;
   text-align: center;
   color: rgb(192, 0, 240);
-  background-image: url("../assets/img/Fondos/castillo.png");
+  background-image: url("../assets/img/Fondos/CastilloBackground.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
