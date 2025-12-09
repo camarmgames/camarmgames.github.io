@@ -11396,19 +11396,45 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+/* ==== COLABORADORES ==== */
+
+#colaboradores .portfolio-item {
+  pointer-events: none; /* Desactiva el click/hover como botón */
+}
+
 #colaboradores img.img-fluid {
-  width: 100%;
-  height: auto;
-  border: 6px solid #ffade4;         /* mismo color que los círculos */
-  border-radius: 20px;               /* esquinas suaves */
+  width: 300px;                /* Mitad de tamaño aproximado */
+  height: 300px;
+  object-fit: contain;         /* Mantiene proporciones dentro del cuadro */
+  border: 6px solid #ffade4;   /* Borde rosado */
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #colaboradores img.img-fluid:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
   box-shadow: 0 0 25px rgba(255, 173, 228, 0.5);
 }
+
+#colaboradores .team-member {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#colaboradores .team-member h4 {
+  color: #d64fd6;
+  font-weight: 700;
+}
+
+#colaboradores .team-member p {
+  color: #e0d0ff;
+  margin-top: -10px;
+  font-size: 0.9rem;
+}
+
 
 
 .contact-link {
